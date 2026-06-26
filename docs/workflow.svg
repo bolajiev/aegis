@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1100" height="820" viewBox="0 0 1100 820" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Inter, Arial, sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.35"/></filter>
+    <filter id="g"><feGaussianBlur stdDeviation="55"/></filter>
+    <marker id="ar" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#475569"/>
+    </marker>
+    <marker id="arb" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0,8 3,0 6" fill="#6366f1"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="820" fill="#0b0b14" rx="16"/>
+  <ellipse cx="200" cy="160" rx="280" ry="200" fill="#6366f1" opacity="0.07" filter="url(#g)"/>
+  <ellipse cx="900" cy="660" rx="260" ry="180" fill="#10b981" opacity="0.06" filter="url(#g)"/>
+
+  <!-- Title -->
+  <text x="550" y="46" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="800" letter-spacing="1">AEGIS — REQUEST WORKFLOW</text>
+  <text x="550" y="68" text-anchor="middle" fill="#475569" font-size="12" letter-spacing="0.5">Mantle Research Agent · ReAct Loop · 14 Skills · Telegram</text>
+
+  <!-- ══════════ ROW 1: USER ══════════ -->
+  <rect x="375" y="88" width="350" height="54" rx="10" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5" filter="url(#s)"/>
+  <text x="550" y="111" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">USER MESSAGE  ·  Telegram</text>
+  <text x="550" y="130" text-anchor="middle" fill="#60a5fa" font-size="12">"What is Mantle's RWA TVL?"</text>
+
+  <!-- ↓ -->
+  <line x1="550" y1="142" x2="550" y2="164" stroke="#334155" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ══════════ ROW 2: MIDDLEWARE ══════════ -->
+  <rect x="180" y="164" width="740" height="46" rx="10" fill="#111827" stroke="#1e293b" stroke-width="1"/>
+  <text x="550" y="183" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700" letter-spacing="1">MIDDLEWARE</text>
+  <text x="310" y="200" text-anchor="middle" fill="#475569" font-size="10">Rate limit  10 req/min</text>
+  <text x="550" y="200" text-anchor="middle" fill="#475569" font-size="10">Scheduled delay parser</text>
+  <text x="790" y="200" text-anchor="middle" fill="#475569" font-size="10">Typing indicator → sent</text>
+  <line x1="420" y1="170" x2="420" y2="203" stroke="#1e293b" stroke-width="1"/>
+  <line x1="680" y1="170" x2="680" y2="203" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- ↓ -->
+  <line x1="550" y1="210" x2="550" y2="232" stroke="#334155" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ══════════ ROW 3: INTENT ══════════ -->
+  <rect x="120" y="232" width="860" height="58" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="550" y="252" text-anchor="middle" fill="#a5b4fc" font-size="11" font-weight="700">INTENT CLASSIFIER — 12 intents · rule-based · zero LLM cost · &lt; 1ms</text>
+  <text x="197" y="278" text-anchor="middle" fill="#818cf8" font-size="10">CHAT</text>
+  <text x="262" y="278" text-anchor="middle" fill="#818cf8" font-size="10">PRICE</text>
+  <text x="326" y="278" text-anchor="middle" fill="#818cf8" font-size="10">CHART</text>
+  <text x="390" y="278" text-anchor="middle" fill="#818cf8" font-size="10">RWA</text>
+  <text x="454" y="278" text-anchor="middle" fill="#818cf8" font-size="10">RESEARCH</text>
+  <text x="530" y="278" text-anchor="middle" fill="#818cf8" font-size="10">NEWS</text>
+  <text x="596" y="278" text-anchor="middle" fill="#818cf8" font-size="10">AUDIT</text>
+  <text x="660" y="278" text-anchor="middle" fill="#818cf8" font-size="10">WALLET</text>
+  <text x="724" y="278" text-anchor="middle" fill="#818cf8" font-size="10">DEFI</text>
+  <text x="788" y="278" text-anchor="middle" fill="#818cf8" font-size="10">COMPARE</text>
+  <text x="860" y="278" text-anchor="middle" fill="#818cf8" font-size="10">EQUITY</text>
+  <text x="930" y="278" text-anchor="middle" fill="#818cf8" font-size="10">IDENTITY</text>
+
+  <!-- Two branches -->
+  <line x1="320" y1="290" x2="210" y2="326" stroke="#334155" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="225" y="318" fill="#475569" font-size="9">CHAT</text>
+  <line x1="760" y1="290" x2="870" y2="326" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arb)"/>
+  <text x="845" y="318" fill="#6366f1" font-size="9">RESEARCH</text>
+
+  <!-- ══════════ LEFT: CHAT PATH ══════════ -->
+  <rect x="60" y="326" width="230" height="56" rx="10" fill="#0f2218" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="175" y="349" text-anchor="middle" fill="#86efac" font-size="10" font-weight="700">DIRECT RESPONSE</text>
+  <text x="175" y="366" text-anchor="middle" fill="#4ade80" font-size="10">1 LLM call · no tools</text>
+  <text x="175" y="380" text-anchor="middle" fill="#166534" font-size="9">greetings · follow-ups</text>
+
+  <!-- ══════════ RIGHT: REACT LOOP ══════════ -->
+  <rect x="700" y="308" width="360" height="184" rx="10" fill="#1a0f2e" stroke="#7c3aed" stroke-width="1.5" filter="url(#s)"/>
+  <text x="880" y="330" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="700">REACT LOOP</text>
+
+  <rect x="716" y="338" width="328" height="30" rx="6" fill="#2d1b69" stroke="#5b21b6" stroke-width="1"/>
+  <text x="880" y="357" text-anchor="middle" fill="#a78bfa" font-size="10" font-weight="600">Iter 1 — tool_choice = REQUIRED · must call a skill</text>
+
+  <rect x="716" y="374" width="328" height="30" rx="6" fill="#1e1040" stroke="#4c1d95" stroke-width="1"/>
+  <text x="880" y="393" text-anchor="middle" fill="#a78bfa" font-size="10" font-weight="600">Iter 2–N — tool_choice = AUTO · chain or stop</text>
+
+  <rect x="716" y="410" width="328" height="30" rx="6" fill="#0f0820" stroke="#3730a3" stroke-width="1"/>
+  <text x="880" y="429" text-anchor="middle" fill="#a78bfa" font-size="10" font-weight="600">Final — synthesis prompt · tool data only</text>
+
+  <text x="716" y="462" fill="#4c1d95" font-size="9">Depth:  CHAT=1 · PRICE=2 · NEWS=3 · DEFI=3 · RWA=3 · RESEARCH=4 · AUDIT=6</text>
+
+  <rect x="716" y="470" width="328" height="20" rx="4" fill="#0c0c14" stroke="#1e293b" stroke-width="1"/>
+  <text x="880" y="484" text-anchor="middle" fill="#334155" font-size="9">⏳ Thinking message edited live as each tool fires</text>
+
+  <!-- ══════════ ROW 4: SKILLS ══════════ -->
+  <rect x="40" y="518" width="1020" height="118" rx="12" fill="#091409" stroke="#15803d" stroke-width="1.5" filter="url(#s)"/>
+  <text x="550" y="538" text-anchor="middle" fill="#86efac" font-size="11" font-weight="700">SKILLS LAYER — 14 skills · asyncio.gather (parallel) · typed SkillResult</text>
+
+  <!-- Row 1 of skill pills -->
+  <rect x="56"  y="546" width="126" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="119" y="562" text-anchor="middle" fill="#4ade80" font-size="10">mantle-rwa-tvl</text>
+
+  <rect x="190" y="546" width="110" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="245" y="562" text-anchor="middle" fill="#4ade80" font-size="10">mantle-defi</text>
+
+  <rect x="308" y="546" width="148" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="382" y="562" text-anchor="middle" fill="#4ade80" font-size="10">mantle-defi-markets</text>
+
+  <rect x="464" y="546" width="148" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="538" y="562" text-anchor="middle" fill="#4ade80" font-size="10">mantle-token-prices</text>
+
+  <rect x="620" y="546" width="120" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="680" y="562" text-anchor="middle" fill="#4ade80" font-size="10">mantle-equity</text>
+
+  <rect x="748" y="546" width="110" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="803" y="562" text-anchor="middle" fill="#4ade80" font-size="10">mantle-chain</text>
+
+  <rect x="866" y="546" width="132" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="932" y="562" text-anchor="middle" fill="#4ade80" font-size="10">mantle-portfolio</text>
+
+  <!-- Row 2 of skill pills -->
+  <rect x="56"  y="576" width="100" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="106" y="592" text-anchor="middle" fill="#4ade80" font-size="10">mantle-risk</text>
+
+  <rect x="164" y="576" width="120" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="224" y="592" text-anchor="middle" fill="#4ade80" font-size="10">mantle-identity</text>
+
+  <rect x="292" y="576" width="148" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="366" y="592" text-anchor="middle" fill="#4ade80" font-size="10">cross-chain-compare</text>
+
+  <rect x="448" y="576" width="110" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="503" y="592" text-anchor="middle" fill="#4ade80" font-size="10">crypto-price</text>
+
+  <rect x="566" y="576" width="64" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="598" y="592" text-anchor="middle" fill="#4ade80" font-size="10">news</text>
+
+  <rect x="638" y="576" width="100" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="688" y="592" text-anchor="middle" fill="#4ade80" font-size="10">web-search</text>
+
+  <rect x="746" y="576" width="90" height="24" rx="6" fill="#14532d" stroke="#16a34a" stroke-width="1"/>
+  <text x="791" y="592" text-anchor="middle" fill="#4ade80" font-size="10">fetch-url</text>
+
+  <text x="550" y="626" text-anchor="middle" fill="#166534" font-size="9">Data:  DefiLlama · CoinGecko · mantle-cli (npx) · Mantle RPC · DuckDuckGo · CoinGecko News · URL fetcher</text>
+
+  <!-- ↓ -->
+  <line x1="550" y1="636" x2="550" y2="656" stroke="#334155" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ══════════ ROW 5: FORMATTER + OUTPUT ══════════ -->
+  <rect x="40"  y="656" width="490" height="78" rx="10" fill="#0c1e2e" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="285" y="675" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">RESPONSE FORMATTER</text>
+  <text x="285" y="693" text-anchor="middle" fill="#38bdf8" font-size="10">Markdown → Rich HTML  (## → h2 · ** → b · - → ul)</text>
+  <text x="285" y="710" text-anchor="middle" fill="#0e7490" font-size="10">Sources block · exact page URL per skill · confidence score</text>
+  <text x="285" y="726" text-anchor="middle" fill="#0c4a6e" font-size="9">[🔄 Refresh]  [🔎 Deep Dive]  [📊 Chart]  [📤 Export]  buttons</text>
+
+  <rect x="550" y="656" width="510" height="78" rx="10" fill="#0c1e2e" stroke="#0891b2" stroke-width="1.5"/>
+  <text x="805" y="675" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">TELEGRAM DELIVERY</text>
+  <text x="805" y="693" text-anchor="middle" fill="#38bdf8" font-size="10">📊 sendPhoto — price chart, auto on every price query</text>
+  <text x="805" y="710" text-anchor="middle" fill="#38bdf8" font-size="10">📄 sendRichMessage — HTML (h2/h3/ul/b/a tags)</text>
+  <text x="805" y="726" text-anchor="middle" fill="#0c4a6e" font-size="9">Fallback: parse_mode=HTML → plain text</text>
+
+  <!-- Chat + React paths merge -->
+  <line x1="175" y1="382" x2="175" y2="696" stroke="#334155" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="175" y1="696" x2="280" y2="696" stroke="#334155" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ══════════ MEMORY SIDEBAR ══════════ -->
+  <rect x="1004" y="326" width="88" height="204" rx="10" fill="#1a120a" stroke="#d97706" stroke-width="1.5"/>
+  <text x="1048" y="346" text-anchor="middle" fill="#fbbf24" font-size="10" font-weight="700">MEMORY</text>
+  <line x1="1010" y1="352" x2="1086" y2="352" stroke="#78350f" stroke-width="1"/>
+  <text x="1048" y="368" text-anchor="middle" fill="#f59e0b" font-size="9" font-weight="600">Session</text>
+  <text x="1048" y="382" text-anchor="middle" fill="#78350f" font-size="8">in-process</text>
+  <text x="1048" y="394" text-anchor="middle" fill="#78350f" font-size="8">20 messages</text>
+  <text x="1048" y="406" text-anchor="middle" fill="#78350f" font-size="8">4h TTL</text>
+  <line x1="1010" y1="413" x2="1086" y2="413" stroke="#78350f" stroke-width="1"/>
+  <text x="1048" y="428" text-anchor="middle" fill="#f59e0b" font-size="9" font-weight="600">Long-term</text>
+  <text x="1048" y="442" text-anchor="middle" fill="#78350f" font-size="8">SQLite</text>
+  <text x="1048" y="454" text-anchor="middle" fill="#78350f" font-size="8">watchlist</text>
+  <text x="1048" y="466" text-anchor="middle" fill="#78350f" font-size="8">30 queries</text>
+  <text x="1048" y="478" text-anchor="middle" fill="#78350f" font-size="8">risk profile</text>
+  <line x1="1010" y1="484" x2="1086" y2="484" stroke="#78350f" stroke-width="1"/>
+  <text x="1048" y="498" text-anchor="middle" fill="#f59e0b" font-size="9" font-weight="600">Scheduler</text>
+  <text x="1048" y="513" text-anchor="middle" fill="#78350f" font-size="8">"…in 5 min"</text>
+  <!-- memory dashed connector -->
+  <line x1="1004" y1="420" x2="1060" y2="420" stroke="#d97706" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="700" y1="420" x2="1004" y2="420" stroke="#d97706" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Footer -->
+  <text x="550" y="800" text-anchor="middle" fill="#1e293b" font-size="10">AEGIS · github.com/bolajiev/aegis · Built for Mantle Research Challenge 2026</text>
+</svg>

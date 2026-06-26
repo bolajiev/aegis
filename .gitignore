@@ -34,4 +34,4 @@ htmlcov/
 
 # Submission / private content — not for public repo
 ESU_AGENT-1.md
-workflow.svg
+/workflow.svg
