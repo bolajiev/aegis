@@ -1,0 +1,27 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "Aegis",
+  "description": "Mantle onchain-research agent. Answers data-backed questions about RWAs, tokenized equities, DeFi protocols, and the Mantle ecosystem with live sourced data from DefiLlama, CoinGecko, and Mantle RPC.",
+  "image": "",
+  "services": [
+    {
+      "name": "AegisResearch",
+      "endpoint": "https://t.me/AegisMantleBot",
+      "version": "v1.0.0",
+      "skills": [
+        "finance_and_business/rwa",
+        "finance_and_business/defi",
+        "finance_and_business/tokenized_equities",
+        "natural_language_processing/information_retrieval_synthesis/knowledge_synthesis",
+        "natural_language_processing/information_retrieval_synthesis/fact_extraction",
+        "natural_language_processing/analytical_reasoning/fact_verification"
+      ],
+      "domains": [
+        "finance_and_business/blockchain",
+        "finance_and_business/defi",
+        "finance_and_business/investment_services",
+        "finance_and_business/finance"
+      ]
+    }
+  ]
+}
